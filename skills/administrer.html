@@ -33,8 +33,14 @@
 
         <div class="divider-box-s"></div>
 
-            <p>paragraphe</p>
-
+            <p>La compétence <strong>Administrer</strong> regroupe les travaux réalisés cette année autour de la <strong>mise en place</strong> et de la <strong>gestion d'infrastructures 
+                réseau</strong>. Elle s'illustre à travers la conception d'un réseau d'entreprise complet, depuis la segmentation des réseaux jusqu'au déploiement des 
+                services, en passant par la sécurisation des accès et la centralisation des journaux système.</p>
+                    <br>
+            <p>Ces expériences m'ont permis de développer une vision plus globale de ce que représente l'administration d'un réseau : non pas une succession de 
+                configurations , mais un ensemble cohérent de services qui interagissent et dont <strong>chaque choix technique a des répercussions</strong> sur 
+                l'infrastructure.</p>
+        
         <div class="divider-box-m"></div>
         <hr class="divider-line">
         <div class="divider-box-m"></div>
@@ -43,20 +49,39 @@
 
         <div class="divider-box-s"></div>
 
-            <p>paragraphe</p>
-
+            <p>Cette SAÉ réalisée en groupe de quatre avait pour objectif de concevoir et déployer une infrastructure réseau complète simulant le réseau 
+                d'une entreprise multi-sites, avec un <strong>siège</strong> et une <strong>succursale</strong> interconnectés. Le projet couvrait un large 
+                spectre de services : segmentation en VLANs, Active Directory, DNS, serveur de messagerie, proxy <a href="https://www.squid-cache.org/Intro/">Squid</a>, 
+                base de données avec réplication, serveur de <a href="https://www.rsyslog.com/">logs centralisé</a>, accès WiFi et tunnel IPSec GRE entre les deux sites.</p>
+                <br>
+            <p>De mon côté, je me suis concentré sur la <strong>configuration réseau de l'infrastructure</strong>, la mise en place du <strong>serveur de logs 
+                centralisé</strong> avec rsyslog et la configuration de l'<strong>accès SSH sécurisé</strong> aux équipements. Le serveur de logs centralise les 
+                journaux de l'ensemble des équipements réseau et des serveurs, organisés par source et par type d'événement pour faciliter le diagnostic. L'accès 
+                SSH a quant à lui été restreint au réseau ADMIN, avec une authentification par clé RSA 2048 bits pour renforcer la sécurité des accès.</p>
+                <br>
+            <p>La principale difficulté de ce projet était le <strong>manque de temps</strong> face à l'ampleur de l'infrastructure à déployer. Avec autant de 
+                services à configurer et à faire fonctionner ensemble, il a fallu constamment prioriser et s'organiser collectivement pour avancer efficacement. 
+                La mise en place du <strong>tunnel IPSec</strong> entre le siège et la succursale a également représenté un défi technique important, nécessitant 
+                une compréhension précise de l'outil pour le faire fonctionner.</p>
+                <br>
+            <p>Ce projet m'a surtout appris à travailler en équipe sur une infrastructure de grande envergure. Coordonner les configurations entre plusieurs 
+                personnes, s'assurer de la cohérence de l'ensemble et être capable de <strong>visualiser globalement l'infrastructure</strong> pour comprendre 
+                les interactions entre chaque composant représente une compétence que je n'avais pas pleinement développée jusqu'alors. C'est ce projet qui 
+                m'a permis de franchir un cap dans ma compréhension du réseau.</p>
+    
         <div class="divider-box-m"></div>
-        <hr class="divider-line">
-        <div class="divider-box-m"></div>
-
-            <h2>SAE2</h2>
-
-        <div class="divider-box-s"></div>
-
-            <p>paragraphe</p>
 
     </div>
 </main>
+
+<script>
+  const current = window.location.pathname.split('/').pop();
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    if (link.getAttribute('href') === current) {
+      link.classList.add('active');
+    }
+  });
+</script>
 
 </body>
 </html>

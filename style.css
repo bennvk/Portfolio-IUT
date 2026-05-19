@@ -62,9 +62,10 @@ nav {
   background: var(--background);
 }
 
-.nav-links-selected {
-  color: #ffffff;
+.nav-links a.active {
+  color: var(--background);
   background: var(--text);
+  font-weight: 500;
 }
 
 /* ── DIVIDER ── */
