@@ -33,7 +33,7 @@ nav {
   font-family: 'DM Serif Display', serif;
   font-size: 1.25rem;
   letter-spacing: 0.01em;
-  color: var(--text);
+  color: #ec6537;
   text-decoration: none;
   user-select: none;
 }
@@ -94,6 +94,14 @@ main {
     background: var(--background);
 }
 
+.img-home {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 825px;
+}
+
+
 .banner {
     display: block;
     margin: 0 auto;
@@ -127,7 +135,7 @@ main {
 
 .img-row {
   display: flex;
-  gap: 16px;
+  gap: 15px;
   justify-content: center;
 }
 
