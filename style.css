@@ -1,0 +1,140 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --background:     #f7f6f2;
+  --nav-background: #ffffff;
+  --border: #e8e4dc;
+  --text:   #1a1915;
+  --muted:  #8a8780;
+}
+
+body {
+  background: var(--background);
+  font-family: 'DM Sans', sans-serif;
+  color: var(--text);
+  min-height: 100vh;
+}
+
+/* ── NAVBAR ── */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--nav-background);
+  border-bottom: 1px solid var(--border);
+  height: 56px;
+  display: flex;
+  align-items: center;
+  padding: 0 40px;
+  justify-content: space-between;
+}
+
+.nav-brand {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.25rem;
+  letter-spacing: 0.01em;
+  color: var(--text);
+  text-decoration: none;
+  user-select: none;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  list-style: none;
+}
+
+.nav-links a {
+  display: block;
+  padding: 6px 14px;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: var(--muted);
+  text-decoration: none;
+  border-radius: 6px;
+  transition: color 0.18s, background 0.18s;
+  letter-spacing: 0.02em;
+}
+
+.nav-links a:hover {
+  color: var(--text);
+  background: var(--background);
+}
+
+.nav-links-selected {
+  color: #ffffff;
+  background: var(--text);
+}
+
+/* ── DIVIDER ── */
+.divider-line {
+  width: 85%;
+  margin: 0 auto;
+  border: none;
+  border-top: 1px solid var(--border);
+}
+
+.divider-box-s  { height: 24px; }
+.divider-box-m  { height: 48px; }
+.divider-box-l  { height: 96px; }
+.divider-box-xl { height: 160px; }
+
+/* ── CONTAINER SITE ── */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ── PAGE ── */
+main {
+    height: calc(100vh - 56px);
+    font-size: 1.25rem;
+    background: var(--background);
+}
+
+.banner {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    min-width: 100%;
+    border-radius: 8px;
+}
+
+.img-left {
+  display: block;
+  max-width: 100%;
+  width: 480px;
+  border-radius: 4px;
+}
+
+.img-center {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 480px;
+  border-radius: 4px;
+}
+
+.img-right {
+  display: block;
+  margin-left: auto;
+  max-width: 100%;
+  width: 480px;
+  border-radius: 4px;
+}
+
+.img-row {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+
+.img-row img {
+  width: 0;
+  flex: 1;
+  max-width: 320px;
+  border-radius: 4px;
+  object-fit: cover;
+}

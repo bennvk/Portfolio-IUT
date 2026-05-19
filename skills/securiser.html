@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Benjamin Petillon</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=DM+Serif+Display&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+
+<main>
+
+<nav>
+    <a href="../index.html" class="nav-brand">Portfolio</a>
+    <ul class="nav-links">
+        <li><a href="administrer.html">Administrer</a></li>
+        <li><a href="connecter.html">Connecter</a></li>
+        <li><a href="programmer.html">Programmer</a></li>
+        <li><a href="securiser.html">Sécuriser</a></li>
+        <li><a href="surveiller.html">Surveiller</a></li>
+    </ul>
+</nav>
+    <div class="container">
+
+        <div class="divider-box-s"></div>
+
+        <img src="../attachments/banner_secu.jpg" class="banner">
+
+        <div class="divider-box-s"></div>
+
+            <h1>Sécuriser</h1>
+
+        <div class="divider-box-s"></div>
+
+            <p>La compétence <strong>Sécuriser</strong> regroupe les travaux réalisés cette année autour de la protection des systèmes d'information et des infrastructures 
+                réseau. Elle s'articule autour de deux axes complémentaires : une approche <strong>offensive</strong>, qui m'a permis de comprendre la logique et les 
+                méthodes d'un attaquant, et une approche <strong>défensive et normative</strong>, où j'ai appris à concevoir des infrastructures en respectant des standards 
+                de sécurité reconnus.</p>
+                    <br>
+            <p>Ces expériences m'ont permis de poser les premières bases d'une culture de la sécurité, un domaine que j'avais jusqu'alors peu pratiqué et que je souhaite 
+                continuer à approfondir.</p>
+        
+        <div class="divider-box-m"></div>
+        <hr class="divider-line">
+        <div class="divider-box-m"></div>
+
+            <h2>SAE3 Cyber 04 - Découverte du pentesting</h2>
+
+        <div class="divider-box-s"></div>
+
+            <p>Dans le cadre de ma formation, Monsieur Mercier nous a donné accès à la certification <a href="https://www.netacad.com/fr/courses/ethical-hacker?courseLang=fr-FR">Ethical Hacker</a> de Cisco via la 
+            plateforme <strong>NetAcad</strong>. Ce cours en auto-formation est structuré en <strong>10 modules</strong> couvrant l'ensemble du cycle 
+            d'un test d'intrusion en <strong>Cyber-sécurité</strong> : introduction à l'ethical hacking, planification et cadrage d'un pentest, collecte d'informations et scan de 
+            vulnérabilités, attaques de social engineering, exploitation de réseaux filaires et sans fil, vulnérabilités applicatives, sécurité cloud et IoT, 
+            techniques de post-exploitation, rédaction de rapports et enfin analyse d'outils et de code.</p>
+                <br>
+            <p>La formation s'appuie sur <strong>34 labs pratiques</strong> réalisés sous <strong>Kali Linux</strong>, une distribution spécialisée dans 
+            la sécurité offensive. Ces exercices permettent de manipuler concrètement des outils de pentest dans un environnement isolé, 
+            ce qui donne une dimension plus pratique à la certification.</p>
+                <br>
+            <p>Ce que cette certification m'a apporté avant tout, c'est un <strong>lexique et une culture de la sécurité offensive</strong> que je n'avais pas. 
+            Des termes comme l'OSINT, la reconnaissance passive, les techniques de post-exploitation ou encore les règles d'engagement d'un pentest m'étaient 
+            jusqu'alors inconnus ou très flous. Aujourd'hui, je dispose d'un vocabulaire structuré et d'une vision claire du cycle complet d'une évaluation 
+            de sécurité, ce qui me permet de mieux appréhender les enjeux de cybersécurité dans mes autres projets.</p>
+
+
+        <div class="divider-box-m"></div>
+        <hr class="divider-line">
+        <div class="divider-box-m"></div>
+
+            <h2>SAE4 Cyber 01 - Sécuriser un système d’information</h2>
+            
+        <div class="divider-box-s"></div>
+
+            <p>Dans le cadre de cette SAÉ réalisée en quadrinôme, j'ai pris en charge la conception de l'<strong>infrastructure 
+            réseau</strong> ainsi que la vérification de sa conformité aux recommandations de l'<strong>ANSSI</strong>. Le projet consistait 
+            à modéliser sous <strong>Packet Tracer</strong> le réseau d'une entreprise implantée sur deux sites distants, avec une segmentation stricte en 
+            trois zones distinctes : <strong>Service</strong>, <strong>Production</strong> et <strong>Admin</strong>. 
+            Chaque zone obéit à des règles d'accès précises : seul le réseau Admin dispose d'une connectivité complète vers 
+            les autres réseaux, y compris ceux du site distant, tandis que les réseaux Service et Production restent volontairement isolés.</p>
+                <br>
+                <img src="../attachments/infra_sae4cyber1.png" class="img-center" style="width: 400px;">
+                <br>
+            <p>L'interconnexion des deux sites a été assurée par un <strong>tunnel sécurisé IPSec GRE</strong>, qui représentait la 
+            partie la plus exigeante du projet. Cette technologie demande une compréhension fine des protocoles et une 
+            configuration minutieuse des paramètres de <strong>chiffrement</strong>, <strong>d'authentification</strong> et <strong>d'encapsulation</strong>. 
+            C'est l'étape qui nous a demandé le plus de temps, et elle m'a appris l'importance de structurer ma <strong>méthodologie</strong> face à une difficulté 
+            technique : documenter, tester méthodiquement, et savoir prendre du recul plutôt que de s'obstiner.</p>
+                <br>
+            <p>Ma spécialisation portait sur la <strong>conformité aux <a href="https://messervices.cyber.gouv.fr/guides/recommandations-pour-la-protection-des-systemes-dinformation-essentiels">
+            recommandations de l'ANSSI</a></strong>. J'ai passé en revue les mesures préconisées, en les classant selon qu'elles étaient applicables, 
+            exclues ou non pertinentes dans notre contexte, via une checklist fournis. Cet exercice m'a permis de comprendre qu'une infrastructure réseau 
+            ne se juge pas uniquement à son fonctionnement technique, mais aussi à sa capacité à répondre à des standards de sécurité reconnus.</p>
+                <br>
+                <div class="img-row">
+                    <img src="../attachments/anssi_excel.png" alt="description" />
+                    <img src="../attachments/anssi.png" alt="description" />
+                </div>                    
+                <br>
+            <p>Sur le plan de la progression, ce projet m'a permis de vraiment évolué sur ma <strong>compréhension du réseau</strong>. Des notions qui me semblaient 
+            floues auparavant sont devenues plus compréhensible à mes yeux. En revanche, je mesure aussi les <strong>limites</strong> de ce projet notamment en 
+            <strong>cybersécurité</strong> : j'en ai acquis la culture, mais j'ai conscience de n'en avoir qu'effleuré la surface. Mais malgré tout 
+            cela m'a donné envie de m'y plonger encore plus en détail.</p>
+
+        <div class="divider-box-m"></div>
+
+    </div>
+</main>
+
+</body>
+</html>

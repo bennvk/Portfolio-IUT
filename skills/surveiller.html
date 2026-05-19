@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Benjamin Petillon</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=DM+Serif+Display&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+
+<main>
+
+<nav>
+    <a href="../index.html" class="nav-brand">Portfolio</a>
+    <ul class="nav-links">
+        <li><a href="administrer.html">Administrer</a></li>
+        <li><a href="connecter.html">Connecter</a></li>
+        <li><a href="programmer.html">Programmer</a></li>
+        <li><a href="securiser.html">Sécuriser</a></li>
+        <li><a href="surveiller.html">Surveiller</a></li>
+    </ul>
+</nav>
+    <div class="container">
+
+        <div class="divider-box-s"></div>
+
+        <img src="../attachments/banner_connect.jpg" class="banner">
+
+        <div class="divider-box-m"></div>
+
+            <h1>Surveiller</h1>
+
+        <div class="divider-box-s"></div>
+
+            <p>La compétence <strong>Surveiller</strong> regroupe les travaux réalisés cette année autour de la supervision des systèmes et des infrastructures 
+                réseau. Elle s'illustre principalement à travers l'un des projets de mon stage, qui m'a permis d'aborder la <strong>supervision</strong> dans un 
+                <strong>contexte professionnel</strong> réel, avec les contraintes et les exigences que cela implique.</p>
+                    <br>
+            <p>Ces expériences m'ont permis de comprendre qu'une infrastructure réseau ne se gère pas uniquement en réaction aux pannes, mais qu'elle doit être 
+                <strong>observée en continu</strong>, avec des indicateurs pertinents et des alertes bien configurées pour anticiper les problèmes avant qu'ils 
+                n'impactent les utilisateurs.</p>
+        
+        <div class="divider-box-m"></div>
+        <hr class="divider-line">
+        <div class="divider-box-m"></div>
+
+            <h2>Stage - Projet de supervision</h2>
+
+        <div class="divider-box-s"></div>
+
+            <p>Dans le cadre de mon stage de onze semaines au sein de la société <strong>DataIT</strong>, filiale du groupe <strong>IT&YOU</strong>, 
+                j'ai eu la charge de concevoir et déployer une solution de supervision réseau complète. L'objectif était d'exploiter les données déjà 
+                collectées par <strong>Zabbix</strong>, outil de supervision déjà en place dans l'entreprise, pour les restituer sous forme de dashboards 
+                visuels et d'alertes via <strong>Grafana</strong>. La seule contrainte imposée était l'utilisation de Grafana, le reste de la méthodologie 
+                m'était entièrement laissé.</p>
+                <br>
+            <p>La solution repose sur une architecture en trois niveaux : les équipements supervisés transmettent leurs métriques via des <strong>agents 
+                Zabbix</strong> ou le protocole <strong>SNMP</strong>, ces données transitent par un <strong>proxy Zabbix</strong> déployé sur des Pare 
+                feu reconvertis, avant d'être centralisées sur le serveur Zabbix puis exposées à Grafana via son <strong>API HTTP</strong>. J'ai conçu 
+                des dashboards adaptés à chaque type d'équipement supervisé, des <strong>NAS Synology</strong> et les <strong>Pare feu</strong>, 
+                en sélectionnant les métriques les plus pertinentes : usage CPU, RAM, espace disque, bande passante, température, uptime ou encore état du RAID. 
+                J'ai également mis en place un système d'<strong>alertes</strong> configurables avec des conditions d'évaluation précises et des notifications vers 
+                différents canaux selon la criticité.</p>
+                <br>
+            <p>La principale difficulté de ce projet était de m'adapter à une infrastructure que je ne connaissais pas. Les Pare feu posaient notamment des 
+                <strong>problèmes de disponibilité</strong> dans Zabbix, avec des erreurs récurrentes liées à des problèmes de configuration réseau ou de pare-feu. Cela 
+                m'a obligé à <strong>diagnostiquer</strong> chaque <strong>équipement défaillant</strong> avant même de pouvoir avancer sur la partie Grafana.</p>
+                <br>
+            <p>Sur le plan technique, j'ai découvert concrètement le fonctionnement des <strong>APIs HTTP</strong>, leur utilisation via des requêtes structurées et 
+                l'exploitation des données qu'elles retournent, une compétence que je n'avais jamais vraiment mise en pratique jusqu'alors. Sur le plan professionnel, 
+                travailler seul sur un projet à l'<strong>échelle d'une entreprise</strong> m'a appris à adapter ma façon de procéder : prendre le temps de comprendre l'existant, 
+                documenter chaque étape et avancer de manière méthodique plutôt que de me <strong>précipiter dans la technique</strong>.</p>
+    
+        <div class="divider-box-m"></div>    
+            
+    </div>
+</main>
+
+</body>
+</html>

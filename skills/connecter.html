@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Benjamin Petillon</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=DM+Serif+Display&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+
+<main>
+
+<nav>
+    <a href="../index.html" class="nav-brand">Portfolio</a>
+    <ul class="nav-links">
+        <li><a href="administrer.html">Administrer</a></li>
+        <li><a href="connecter.html">Connecter</a></li>
+        <li><a href="programmer.html">Programmer</a></li>
+        <li><a href="securiser.html">Sécuriser</a></li>
+        <li><a href="surveiller.html">Surveiller</a></li>
+    </ul>
+</nav>
+    <div class="container">
+
+        <div class="divider-box-s"></div>
+
+        <img src="../attachments/banner_telecom.jpg" class="banner">
+
+        <div class="divider-box-m"></div>
+
+            <h1>Connecter</h1>
+
+        <div class="divider-box-s"></div>
+
+            <p>La compétence <strong>Connecter</strong> regroupe les travaux réalisés cette année autour des infrastructures de communication et de la 
+                transmission des données. Elle s'articule autour de deux axes : d'un côté, une approche <strong>physique et fréquentielle</strong> avec l'étude 
+                des signaux radio et des techniques de modulation, de l'autre, une approche plus <strong>orientée réseau</strong> avec la conception et 
+                l'interconnexion d'infrastructures multi-sites.</p>
+                    <br>
+            <p>Ces projets m'ont permis de mieux appréhender la <strong>chaîne de communication</strong>, depuis la génération d'un signal jusqu'à sa transmission et sa 
+                réception, aussi bien dans le domaine des télécommunications que des réseaux d'entreprise.</p>
+        
+        <div class="divider-box-m"></div>
+        <hr class="divider-line">
+        <div class="divider-box-m"></div>
+
+            <h2>SAE301 - Etude et mise en oeuvre d’un système de transmission</h2>
+
+        <div class="divider-box-s"></div>
+
+            <p>Cette SAÉ réalisée en trinôme avait pour objectif de concevoir une chaîne complète d'émission et de réception radio en utilisant la 
+                <strong>radio logicielle (SDR)</strong>. Le projet s'est articulé autour de plusieurs outils : le logiciel <strong>GNU Radio</strong> 
+                pour la conception des chaînes de traitement du signal, l'émetteur/récepteur <strong>Adalm-Pluto</strong> comme interface radio, et 
+                l'analyseur de spectre <strong>Spectran HF-6065</strong> couplé au logiciel <strong>MCS</strong> pour l'observation des signaux.</p>
+                <br>
+            <p>De mon côté, je me suis concentré sur la <strong>recherche bibliographique et l'étude des modulations</strong>. J'ai étudié et comparé 
+                les différentes techniques de modulation numérique, notamment l'<strong>ASK</strong>, le <strong>PSK</strong> et le <strong>QAM</strong>, 
+                en analysant leurs caractéristiques, avantages et limites respectifs. J'ai également travaillé sur l'<strong>analyse spectrale</strong> 
+                des signaux, en apprenant à lire et interpréter un spectre de fréquences, à identifier les bandes occupées par les opérateurs mobiles, et 
+                à comprendre les différences entre flux montant et descendant. Enfin, j'ai réalisé une synthèse sur le système <strong>DAB+</strong>, la 
+                radio numérique terrestre qui a vocation à remplacer la FM analogique d'ici 2030.</p>
+                <br>
+            <p>L'aboutissement du projet consistait à transmettre un flux audio/vidéo par voie radio à <strong>433,92 MHz</strong> en modulation <strong>
+                GMSK</strong>, en utilisant VLC pour la diffusion et GNU Radio pour la chaîne d'émission et de réception. Si la maquette était théoriquement 
+                fonctionnelle, nous n'avons pas réussi à restituer correctement le flux vidéo en réception. Avec le recul, cette situation est certes frustrante, 
+                mais nous avons compris la raison de notre erreur ce qui à été marquant pour la suite. 
+                Nous avons identifié les causes probables, notamment un <strong>débit trop élevé</strong> pour la bande passante disponible, un <strong>mauvais choix de modulation</strong> 
+                face à l'OFDM et des <strong>problèmes d'adaptation des codecs</strong>.</p>
+                <br>
+            <p>Ce projet représente une vraie progression dans ma compréhension du <strong>phénomène de modulation</strong>. Des notions qui relevaient jusqu'alors 
+                de la théorie pure, comme la représentation fréquentielle d'un signal, les bandes latérales ou le théorème de Shannon, sont devenues concrètes et 
+                manipulables. C'est le type de projet qui donne du sens aux cours magistraux.</p>
+        
+        <div class="divider-box-m"></div>
+
+
+    </div>
+</main>
+
+</body>
+</html>
