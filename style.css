@@ -66,6 +66,8 @@ nav {
   color: var(--background);
   background: var(--text);
   font-weight: 500;
+  transition: color 0.18s, background 0.18s;
+
 }
 
 /* ── DIVIDER ── */
